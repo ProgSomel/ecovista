@@ -1,7 +1,8 @@
-import React from 'react'
+import AQIComponent from "@/app/components/AQIComponent";
+import React from "react";
 
-export default function AQIPage() {
-  return (
-    <div>AQIPage</div>
-  )
+export default async function AQIPage({ params, searchParams }) {
+  const { location } = await params;
+  const { latitude, longitude } = await searchParams;
+  return <AQIComponent lat={latitude} lon={longitude} />;
 }

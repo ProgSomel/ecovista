@@ -1,5 +1,8 @@
 import React from "react";
+import LocationInfo from "../components/LocationInfo";
 
-export default function LocaionPage() {
-  return <div>page</div>;
+export default async function LocationPage({ params, searchParams }) {
+  const { latitude, longitude } = await searchParams;
+
+  return <LocationInfo lat={latitude} lon={longitude} />;
 }

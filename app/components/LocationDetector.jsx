@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 export default function LocationDetector() {
